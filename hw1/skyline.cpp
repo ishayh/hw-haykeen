@@ -3,9 +3,6 @@
 #include <sstream>
 
 using namespace std;
-// Check that what needs to be an int is an int, color does not need to be checked
-// Check valgrind for memory leaks
-// Document in README that if input file has a blank spae output file will return error
 int main(int argc, char* argv[])
 {
   if(argc < 3)
@@ -25,7 +22,7 @@ int main(int argc, char* argv[])
   getline(input, curr); //consume the newline character for the first line.
   skyline = new string*[constructionspots];
 
-  //you will need to keep track of the height of each building
+  //keep track of the height of each building
   buildingheights = new int[constructionspots];
 
   for (int i = 0; i < constructionspots; i++) 
