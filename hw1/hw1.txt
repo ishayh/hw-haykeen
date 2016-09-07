@@ -30,10 +30,14 @@ It will prompt me to add a commit message along with the commit statement
 
 
 Problem 4
-The end contents of in are (5,1,1,1,1). I execute funcA until n=0, at which point I go into funcB at the lowest level and return 1. FuncB swaps the 1st element and the nth element, and then changes in[0] to temp, which is in[0] which is always 1. This in turn makes a loop filling every single element in the array with 1 and swapping the two elements in funcB. That is why the first element is 5 because there is no function call so it doesn't get swapped.
-
-
-
-Problem 5
-
-
+The end contents of in are (5,1,1,1,1). 
+I execute funcA until n=0, at which point 
+I go into funcB at the lowest level and return 1. 
+FuncB swaps the 1st element and the nth element, 
+and then changes in[0] to temp, which is in[0] which 
+is always 1. This in turn makes a loop filling
+ every single element in the array with 1 and 
+ swapping the two elements in funcB. 
+ That is why the first element is 
+ 5 because there is no function call so it 
+ doesn't get swapped.
